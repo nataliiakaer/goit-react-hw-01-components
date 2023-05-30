@@ -1,6 +1,5 @@
 .statistics {
   width: 600px;
-  margin: 0 auto;
   background-color: #fff;
 }
 
@@ -10,7 +9,7 @@
   margin: 70px 0 70px 0;
 }
 
-.stat-list {
+.statList {
   display: flex;
   flex-wrap: wrap;
 }

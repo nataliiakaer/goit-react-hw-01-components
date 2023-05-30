@@ -1,28 +1,28 @@
 import PropTypes from 'prop-types';
-import './Profile.css';
+import P from './Profile.module.css';
 
 export const Profile = props => {
   return (
-    <section className="profile">
-      <div className="description">
-        <img src={props.avatar} alt={props.username} className="avatar" />
-        <p className="name">{props.username}</p>
-        <p className="tag">@{props.tag}</p>
-        <p className="location">{props.location}</p>
+    <section className={P.profile}>
+      <div className={P.description}>
+        <img src={props.avatar} alt={props.username} className={P.avatar} />
+        <p className={P.name}>{props.username}</p>
+        <p className={P.tag}>@{props.tag}</p>
+        <p className={P.location}>{props.location}</p>
       </div>
 
-      <ul className="stats">
-        <li className="stats-item">
-          <span className="label">Followers</span>
-          <span className="quantity">{props.stats.followers}</span>
+      <ul className={P.stats}>
+        <li className={P.statsItem}>
+          <span className={P.label}>Followers</span>
+          <span className={P.quantity}>{props.stats.followers}</span>
         </li>
-        <li className="stats-item">
-          <span className="label">Views</span>
-          <span className="quantity">{props.stats.views}</span>
+        <li className={P.statsItem}>
+          <span className={P.label}>Views</span>
+          <span className={P.quantity}>{props.stats.views}</span>
         </li>
-        <li className="stats-item">
-          <span className="label">Likes</span>
-          <span className="quantity">{props.stats.likes}</span>
+        <li className={P.statsItem}>
+          <span className={P.label}>Likes</span>
+          <span className={P.quantity}>{props.stats.likes}</span>
         </li>
       </ul>
     </section>
@@ -30,8 +30,8 @@ export const Profile = props => {
 };
 
 Profile.propTypes = {
-  username: PropTypes.string,
-  tag: PropTypes.string,
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
   location: PropTypes.string,
   avatar: PropTypes.string,
   stats: PropTypes.objectOf(PropTypes.number),

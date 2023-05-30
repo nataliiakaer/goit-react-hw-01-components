@@ -17,7 +17,7 @@
   flex-wrap: wrap;
 }
 
-.stats-item {
+.statsItem {
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -46,6 +46,7 @@ img {
   gap: 30px;
 }
 
-.section {
+section {
   background-color: #fff;
+  margin: 0 auto;
 }

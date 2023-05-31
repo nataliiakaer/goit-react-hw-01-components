@@ -1,0 +1,31 @@
+.transactionHistory {
+  width: 750px;
+}
+
+.transactionHead {
+  background-color: rgb(113, 206, 223);
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0.1rem;
+  height: 36px;
+}
+
+.transactionHeader {
+  text-transform: uppercase;
+}
+
+.transactionBodyRow {
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  font-size: 16px;
+}
+
+.transactionBodyRow:nth-child(even) {
+  background-color: rgb(235, 241, 241);
+}
+
+.transactionData {
+  text-align: center;
+  color: #757575;
+}
